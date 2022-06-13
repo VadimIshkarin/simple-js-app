@@ -1,6 +1,6 @@
 //Never use FOR LOOP with Arrays, better to use Array helper methods such as forEach, map, reduce!!!
 
-//FOR LOOP that iterates over each item in pokemonList (an array of objects)
+//FOR LOOP that iterates over each item in pokemonList (an array of objects) and document write () pokemon name, color, height, type and don't use console.log.
 let pokemonList = [
   { name: "Bulbasaur", height: 7, color: "blue", type: "poison" },
   { name: "Charmander", height: 6, color: "orange", type: "fire" },
@@ -29,7 +29,7 @@ for (let i = 0; i < pokemonList.length; i++) {
   }
 }
 
-// //FOR LOOP that iterates over each item in pokemonList (an array of objects)
+// //FOR LOOP that iterates over each item in pokemonList (an array of objects) and document write () each Pokemon names.
 // let pokemonList = [
 //   { name: "Bulbasaur", height: 7, color: "blue", type: "poison" },
 //   { name: "Charmander", height: 6, color: "orange", type: "fire" },
