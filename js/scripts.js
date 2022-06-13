@@ -11,17 +11,17 @@ for (let i = 0; i < pokemonList.length; i++) {
   if (pokemonList[i].height < 8 && pokemonList[i].height > 6) {
     document.write(pokemonList[0].name + ", ");
     console.log(
-      `${pokemonList[i].name} height is 7, color is ${pokemonList[i].color}, type is ${pokemonList[i].type}.`
+      `${pokemonList[i].name} height is ${pokemonList[i].height}, color is ${pokemonList[i].color}, type is ${pokemonList[i].type}.`
     );
   } else if (pokemonList[i].height < 7 && pokemonList[i].height > 5) {
     document.write(pokemonList[1].name + ", ");
     console.log(
-      `${pokemonList[i].name} height is 6, color is ${pokemonList[i].color}, type is ${pokemonList[i].type}.`
+      `${pokemonList[i].name} height is ${pokemonList[i].height}, color is ${pokemonList[i].color}, type is ${pokemonList[i].type}.`
     );
   } else {
     document.write(pokemonList[2].name + ".");
     console.log(
-      `${pokemonList[i].name} height is 8 - Wow, that's big!, color is ${pokemonList[i].color}, type is ${pokemonList[i].type}.`
+      `${pokemonList[i].name} height is ${pokemonList[i].height}: - Wow, that's big!, color is ${pokemonList[i].color}, type is ${pokemonList[i].type}.`
     );
   }
 }
