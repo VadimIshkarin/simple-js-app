@@ -1,15 +1,15 @@
-//IIFE - pokemonList1
+//IIFE - pokemonList
 let pokemonRepository = (function () {
-  let pokemonList1 = [
+  let pokemonList = [
     { name: "Bulbasaur", height: 7, color: "blue", type: "poison" },
     { name: "Charmander", height: 6, color: "orange", type: "fire" },
     { name: "Charizard", height: 8, color: "brown", type: ["flying", " fire"] },
   ];
   function add(pokemon) {
-    pokemonList1.push(pokemon);
+    pokemonList.push(pokemon);
   }
   function getAll() {
-    return pokemonList1;
+    return pokemonList;
   }
   return {
     add: add,
@@ -17,39 +17,58 @@ let pokemonRepository = (function () {
   };
 })();
 
-console.log(pokemonRepository.getAll());
-
-pokemonRepository.add({
-  name: "Dino",
-  height: 11,
-  color: "green",
-  type: "fire",
-});
-
-//FOR EACH method that iterates over each item in pokemonList (an array of objects).
-let pokemonList = [
-  { name: "Bulbasaur", height: 7, color: "blue", type: "poison" },
-  { name: "Charmander", height: 6, color: "orange", type: "fire" },
-  { name: "Charizard", height: 8, color: "brown", type: ["flying", " fire"] },
-];
-
-pokemonList.forEach(function (pokemon) {
-  if (pokemon.height >= 8) {
+function loopFunction(pokemons) {
+  if (pokemons.height > 10) {
     document.write(
-      `${"<p>" + pokemon.name} height is ${
-        pokemon.height
-      }: - Wow, that's big!, color is ${pokemon.color}, type is ${
-        pokemon.type
+      `${"<p>" + pokemons.name} height is ${
+        pokemons.height
+      }: - Wow, that's big!, color is ${pokemons.color}, type is ${
+        pokemons.type
       }.`
     );
   } else {
     document.write(
-      `${"<p>" + pokemon.name} height is ${pokemon.height}, color is ${
-        pokemon.color
-      }, type is ${pokemon.type}.`
+      `${"<p>" + pokemons.name} height is ${pokemons.height}, color is ${
+        pokemons.color
+      }, type is ${pokemons.type}.`
     );
   }
+}
+
+pokemonRepository.add({
+  name: "Steelix",
+  height: 30,
+  color: "grey",
+  type: "rock head",
 });
+pokemonRepository.getAll().forEach(loopFunction);
+
+// ________________________________________________
+//OTHER EXAMPLES of LOOPS
+//FOR EACH method that iterates over each item in pokemonList (an array of objects).
+// let pokemonList = [
+//   { name: "Bulbasaur", height: 7, color: "blue", type: "poison" },
+//   { name: "Charmander", height: 6, color: "orange", type: "fire" },
+//   { name: "Charizard", height: 8, color: "brown", type: ["flying", " fire"] },
+// ];
+
+// pokemonList.forEach(function (pokemon) {
+//   if (pokemon.height >= 8) {
+//     document.write(
+//       `${"<p>" + pokemon.name} height is ${
+//         pokemon.height
+//       }: - Wow, that's big!, color is ${pokemon.color}, type is ${
+//         pokemon.type
+//       }.`
+//     );
+//   } else {
+//     document.write(
+//       `${"<p>" + pokemon.name} height is ${pokemon.height}, color is ${
+//         pokemon.color
+//       }, type is ${pokemon.type}.`
+//     );
+//   }
+// });
 
 //FOR LOOP that iterates over each item in pokemonList (an array of objects) and document write () pokemon name, color, height, type and don't use console.log.
 // let pokemonList = [
