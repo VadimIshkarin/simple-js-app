@@ -1,6 +1,12 @@
 * {
   box-sizing: border-box;
 }
+.pokemon-list {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
 
 .button-class {
   background-color: green;
@@ -18,7 +24,7 @@
   background-color: rgb(70, 168, 155);
   color: whitesmoke;
   border: 2px solid rgb(70, 168, 155);
-  border-radius: 80px;
+  border-radius: 10px;
 }
 
 button:hover,
