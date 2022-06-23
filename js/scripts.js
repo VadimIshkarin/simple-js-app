@@ -26,10 +26,10 @@ let pokemonRepository = (function () {
     titleElement.innerText = pokemon.name;
 
     let contentElement = document.createElement("p");
-    contentElement.innerText = "height: " + pokemon.height + " inches.";
+    contentElement.innerText = "height: " + pokemon.height + " inches";
 
     let typeElement = document.createElement("p");
-    typeElement.innerText = "weight: " + pokemon.weight + " lb.";
+    typeElement.innerText = "weight: " + pokemon.weight + " lbs";
 
     modal.appendChild(pokemonImage);
     modal.appendChild(closeButtonElement);
