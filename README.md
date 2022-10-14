@@ -21,15 +21,13 @@ This is a simple Pokédex App built with HTML, CSS and JavaScript that loads dat
 - When clicked, shows the details of a given pokemon
 - Search bar enabling a user to search for a given pokemon by name
 
-## Dependencies
+## Dependencies:
 
 - HTML
 - CSS
 - Bootstrap
 - JS (JQuery, Vanilla)
 
-## Link
-
-### Pokédex App:
+## Link:
 
 - https://vadimishkarin.github.io/simple-js-app/
